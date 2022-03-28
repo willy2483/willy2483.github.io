@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1 class="brand">logo</h1>
+        <ul class="links-container">
+            <li class="links-item"><a href="#" class="link active">home</a></li>
+            <li class="links-item"><a href="#project-section" class="link ">project</a></li>
+            <li class="links-item"><a href="#about-section" class="link ">about</a></li>
+            <li class="links-item"><a href="#contact-section" class="link ">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- home section -->
+    <section class="home">
+        <div class="hero-content">
+            <h1 class="hero-heading"><span class="highlight">Hi, </span>i am William</h1>
+            <p class="profession">Developer Junior</p>
+            <p class="info">Après avoir entamé une reconversion professionnelle il y a trois ans, je suis actuellement en 
+                formation courte, en développement d'Intelligence Artificielle et souhaite me spécialiser dans le développement 
+                d'applications.</p>
+            <a href="#contact-section" class="btn">contact</a>
+        </div>
+        <img src="images/profil (1).jpeg" class="image" alt="">
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about-section">
+        <h2 class="heading">about <span class="highlight">me</span></h2>
+        <p class="sub-heading">All tha we see or seem is but a dream within a dream (E.A. Poe). </p>
+        <div class="seperator"></div>
+
+        <div class="about-me-container"></div>
+        <div class="left-col">
+            <img src="" class="about-image" alt="">
+        </div>
+        <div class="right-col">
+            <p class="about-para">Lorsque j'ai fais des recherhces afin de savoir ce qu'il fallait que j'indique dans cette section, 
+                                  j'ai trouvé tout et n'importe quoi, mais ce qui revenait régulièrement était qu'il fallait éviter 
+                                  de parler de soi. Soit, alors pourquoi "About me" ? Bref, étant censé me décrire et donner envie 
+                                  aux professionnels de me faire confiance, je vais suivre la logique et essayer de me décrire, 
+                                  afin que vous puissiez vous faire votre propre avis.</p>
+                                  
+            <a href="images/cv_developpeur.pdf" class="btn">download cv</a>        
+        </div>
+
+        <h2 class="heading">languages and frameworks i know</h2>
+        <div class="seperator"></div>
+        <div class="skill-container">
+            <div class="skill-card" style="--bg: #f06529">
+                <p class="skill">HTML</p>
+            </div>
+            <div class="skill-card" style="--bg: #379ad6">
+                <p class="skill">CSS</p>
+            </div>
+            <div class="skill-card" style="--bg: #cc6699">
+                <p class="skill">Python</p>
+            </div>
+            <div class="skill-card" style="--bg: #f7df1e">
+                <p class="skill">JavaScript</p>
+            </div>
+            <div class="skill-card" style="--bg: #5ed9fb">
+                <p class="skill">DJANGO</p>
+            </div>
+            <div class="skill-card" style="--bg: #83cd29">
+                <p class="skill">Postgres SQL</p>
+            </div>
+            <div class="skill-card" style="--bg: #326690">
+                <p class="skill">GIT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section -->
+    <section class="project" id="project-section">
+        <h2 class="heading">Project<span class="highlight">s</span></h2>
+        <p class="sub-heading"> </p>
+        <div class="seperator"></div>
+
+        <div class="filters">
+            <button class="filter-btn active" id="all">all</button>
+            <button class="filter-btn" id="python">python</button>
+            <button class="filter-btn" id="django">django</button>
+            <button class="filter-btn" id="backend">backend</button>
+            <button class="filter-btn" id="fullstack">JavaScript</button>
+        </div>
+
+        <div class="project-container">
+            <!-- <div class="project-card" data-tags="#all, ${project.tags}">
+                <img src="images/${project.image}" alt="">
+                <div class="content">
+                    <h1 class="project-name">${project.image}</h1>
+                    <span class="tags">${project.tags}</span>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- contact form -->
+    <section class="contact" id="contact-section">
+        <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+        <p class="sub-heading">Lorem ipsum dolor sit amet consectetur. </p>
+        <div class="seperator"></div>
+
+        <div class="contact-form">
+            <div class="name">
+                <input type="text" class="first-name" required placeholder="first name">
+                <input type="text" class="last-name" required placeholder="last name">
+            </div>
+            <input type="email" required class="email" placeholder="email">
+            <textarea class="message" placeholder="message" required></textarea>
+            <button class="btn contact-btn">contact</button>
+        </div>
+    </section>
+
+    <footer class="footer">made with love by William Valerio</footer>
+
+    <script src="project.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
